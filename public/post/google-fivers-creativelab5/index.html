@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>My journey into creativelab5.com &middot; Georgios Kaleadis</title>
+        <meta name="description" content="About reverse engineering the involved paperjs/react based engine and creating a keyframe based animation">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.25" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="My journey into creativelab5.com">
+<meta property="og:description" content="About reverse engineering the involved paperjs/react based engine and creating a keyframe based animation">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/post/google-fivers-creativelab5/">
+        <link rel="stylesheet" href="/dist/application.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body class="page-holder">
+        
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-5010378-6', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="2vc.org" href="/">2vc.org</a>
+                            </h1>
+                        
+                        <a class="button-square" href="/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/deluxee">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/georgiee">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Contact" href="/page/contact/">Contact</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="About" href="/page/about/">About</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Lab" href="/post/">Lab</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+            <div class="page-holder__content">
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">My journey into creativelab5.com</h1>
+    
+        <p class="post-description" itemprop="description">About reverse engineering the involved paperjs/react based engine and creating a keyframe based animation</p>
+    
+    <p class="post-date">
+        <span>Published <time datetime="2016-06-09" itemprop="datePublished">Thu, Jun 9, 2016</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="" itemprop="url" rel="author">Georgios Kaleadis</a>
+            </span>
+        </span>
+    </p>
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    
+
+<h2 id="creative-what">Creative what?</h2>
+
+<p>creativelab5.com is a website about recruiting the next fivers for one of google&rsquo;s creative labs.
+You can see the famous google search page made of simple shapes and a timeline with 10 keyframes.</p>
+
+<p>The task is the following:
+As your first test, we want to see what you can do with some shapes, a text bar, and a plain white page. Write it, design it, code it, break it. Consider this the cover letter to your application.</p>
+
+<p>I focused on coding and breaking - of course. That&rsquo;s what this posting is about. <a href="https://www.creativelab5.com/s/MCrHy0">This is the result.</a>
+<a href = 'https://www.creativelab5.com/s/MCrHy0' target="_blank" >
+  <img src="/images/creativelab-submission.png" alt="My Creative5 Submission" />
+</a> <iframe src="https://ghbtns.com/github-btn.html?user=georgiee&repo=google-fivers-2016&type=star&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe></p>
+
+<p>The story? Well we have an intruder. A pink circle which shouldn&rsquo;t be part of the google logo. What happens? Yeah of course, the google logo gets angry, very angry! But it doesn&rsquo;t help and on the google logo is just bewildered in the end. And just in this moment of confusion I reveal the image of the spiral which wasn&rsquo;t visible before- as it was white on white. Surprise, it&rsquo;s a rasterized version of me.</p>
+
+<p>Everything is going pretty quick as time is precious but I like the result- especially from the technical point of view.</p>
+
+<h2 id="process">Process</h2>
+
+<p>I started playing around with the given objects. Pretty soon I discovered the console
+messages (Some Hello World stuff) and I immediately downloaded the minified JS code. After making it pretty I looked through it, identified the involved libraries and isolated the core of the application code. This alone was so much fun. If you wonder about the involved libraries: The most important parts are: Paper JS, React, Quill (Timeline) and chancejs for the internal random names.</p>
+
+<p>While I was looking through the files I discovered that the HelloWorld message was not the only message. There was a chain of messages which were triggered one after one- by some triggers. And yeah, that&rsquo;s when I recognized that I should actually use the console to interact with the creative5 app.</p>
+
+<p>I worked through the whole puzzle and earned the crab- reserved for us hackers 👊 From now on I understood that I should do much more than interacting with the console. I decided to rebuild the app locally by downloading all necessary files. Now I was able to monkey patch parts of the source files to improve my understanding of the code and it also enabled me to add some convenient callbacks so I could interact much better with the source.</p>
+
+<h2 id="additional-code">Additional code</h2>
+
+<p>With that being said I soon created my own classes to make my life easier with those tasks:</p>
+
+<ul>
+<li>Create my own shapes by code</li>
+<li>Create my own keyframes by code</li>
+<li>Try some other fancy tricks around path building (image raster) and path animation (tweenmax and math based calculations)</li>
+</ul>
+
+<p>It was so exciting to dig deeper and deeper and well yeah I digged very long and deep and created so much stuff:</p>
+
+<ul>
+<li>I rasterized an image of me based on this examples (<a href="http://paperjs.org/examples/spiral-raster/">http://paperjs.org/examples/spiral-raster/</a>)</li>
+<li>I animated that whole spiral. This generated far too many keyframes (as the generated path is VERY huge and the creative5 engine is based around single points per keyframe, not path properties like rotation/translation)</li>
+<li>I created my own classes of keyframes and shapes with corresponding parsers and serializers so I can create my own data structure which can be read by the  creative5 engine again. Notice: this sync step is manually. I open the lab page, go to dev panel &gt; resources &gt; Local Storage and replace the given data with my locally generated data.</li>
+<li>I read in my own svg paths, populated key shortcuts with KeyboardJS to make my life easier, used chroma js for some beautiful hsl colors</li>
+<li>I also created a TimelineMax (gsap) scanning utility which would translate any prepared gsap animation in a keyframe data sequences- which would conform to the creative5 engine for easy copy pasting.</li>
+</ul>
+
+<h2 id="final-version">Final Version</h2>
+
+<p>There are only 540 frames. I found no way of extending the duration as the relevant parameters are hard coded and not part of the &ldquo;protocol&rdquo;.</p>
+
+<p>There are also only 10 given keyframes. But by using my own keyframing process - decoupled from the main timeline - I was able to use any frame between 0 and 540 it was just interpolating them fine.</p>
+
+<p>I included two main parts: The spiral and an animation with the given shapes and an additional pink shape.</p>
+
+<h3 id="regarding-the-spiral">Regarding the spiral</h3>
+
+<p>As a coder my result of generating the spiral with my own image was kind of naturally. But I couldn&rsquo;t do any animation/keyframing with that spiral as it would multiply the already large amount of points. There is some maximum size on the endpoint for saving your creation and I could a lot of errors with the status code 500. This is a clear sign that I created to much data. So I limited myself to a single spiral with no keyframes. Just static.</p>
+
+<h3 id="the-main-animation">The main animation</h3>
+
+<p>That story is very easy (see my final version note). To manage the different states
+of the google logo parts I used my keyboard shortcut based system together with a state manager. My workflow was like this: Save with <code>j</code> the state of any selected object to the local storage, copy the content into a text file. Load all those files and apply them during startup after a reload. With this I could extend the whole animation step after step. The end result was always available for copy past in the localStorage.</p>
+
+<p>The only thing I did: Run my hint runner to get the crab badge of course.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>I spend so much time for such a silly animation- but I felt my passion burning so I regret NOTHING and I learned a lot- especially about Paper JS. Thanks a lot fivers, you all did a great job with that entertaining and involving task.</p>
+
+<p>Thanks and high five fivers 🙌</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+    </div>
+</footer>
+
+        
+    </article>
+</div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="2vc.org" href="/">2vc.org</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2017 / Georgios Kaleadis
+                </p>
+            </div>
+        </footer>
+
+        <script src="/js/jquery-1.11.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+        <script src="/js/jquery.fitvids.js"></script>
+        <script src="/js/scripts.js"></script>
+
+        <script src="/dist/application.js"></script>
+    </body>
+</html>
+

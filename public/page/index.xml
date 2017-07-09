@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on 2vc.org</title>
+    <link>/page/</link>
+    <description>Recent content in Pages on 2vc.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Apr 2015 02:13:50 +0000</lastBuildDate>
+    
+	<atom:link href="/page/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>/page/about/</link>
+      <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
+      
+      <guid>/page/about/</guid>
+      <description>About Georgios Kaleadis, 33 years old Frontend Architect from Munich.
+I love beautiful algorithms. Especially those generating beautiful images and those being a beauty just by describing something complex with elegance like dijkstra’s and the fourier transform.
+Steering and flocking, generative art, raycasting, perlin noise, voronoi diagrams - that&amp;rsquo;s why I love being a creative programmer. I&amp;rsquo;m also addicted to those tools which helping me to visualize all that stuff.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>/page/contact/</link>
+      <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
+      
+      <guid>/page/contact/</guid>
+      <description>Contact Need to get in touch with me? Mail me: georgios@kaleadis.de
+For the law:
+Oettingenstr. 31, 80538 München, UStID DE227280707</description>
+    </item>
+    
+  </channel>
+</rss>

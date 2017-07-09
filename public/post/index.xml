@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 2vc.org</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on 2vc.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Origamizake 折り紙</title>
+      <link>/post/origamisake/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/origamisake/</guid>
+      <description> Introduction My current obsession is Origami and Origamizake is the digital product of it. It is all about folding Origami in 3D with the future goal of making it audio-reactive.
+Take a look here:
+https://georgiee.github.io/origami/
+Just fun for me. See my LOG.MD for my current mood 🎎
+Running example Open in new window      play     </description>
+    </item>
+    
+    <item>
+      <title>My journey into creativelab5.com</title>
+      <link>/post/google-fivers-creativelab5/</link>
+      <pubDate>Thu, 09 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/google-fivers-creativelab5/</guid>
+      <description>Creative what? creativelab5.com is a website about recruiting the next fivers for one of google&amp;rsquo;s creative labs. You can see the famous google search page made of simple shapes and a timeline with 10 keyframes.
+The task is the following: As your first test, we want to see what you can do with some shapes, a text bar, and a plain white page. Write it, design it, code it, break it.</description>
+    </item>
+    
+    <item>
+      <title>God of Particles</title>
+      <link>/post/god-of-particles/</link>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/god-of-particles/</guid>
+      <description>Introduction Work in progress. A GPGPU particle system based on kinematic equations. Acceleration, velocity and speed. I worked through the excellent source of {% link webgl-particles2 https://github.com/nopjia/webgl-particles2 %} and created my very own understanding of particles in space. At the moment it looks really the same as the inspirational source. But under the hood it&amp;rsquo;s a different and more manageable beast.
+First Change: Make velocity explicit The original is based on implicit velocity calculated by the delta of previous and current positions.</description>
+    </item>
+    
+    <item>
+      <title>Friendly Birds</title>
+      <link>/post/friendly-birds/</link>
+      <pubDate>Wed, 25 May 2016 05:00:00 +0000</pubDate>
+      
+      <guid>/post/friendly-birds/</guid>
+      <description>Introduction This was my journey into Angry Birds. I focused on the following components and challenges:
+ Camera System for PIXI Minimap View on the scene Box2D Integration in PIXI (there is some code from Phaser&amp;rsquo;s Box2D) Fluid Integration (Liquid Fun), the build of box2d already contains liquid fun (see here Polygon Rendering in PIXI (this wasn&amp;rsquo;t possible then) Custom Water Shader for the particles Raycasting in Box2D Building a Slingshot with Trajectory projection  👻Attention.</description>
+    </item>
+    
+    <item>
+      <title>Flocking boids or the war of triangles.</title>
+      <link>/post/flocking-boids/</link>
+      <pubDate>Wed, 25 May 2016 03:00:00 +0000</pubDate>
+      
+      <guid>/post/flocking-boids/</guid>
+      <description> Introduction Interested in flocking, swarm like movement. Stop reading here, go to the boss of the boids- and maybe come back then😊 http://www.red3d.com/cwr/boids/
+And don&amp;rsquo;t forget to read through the sourcecode of Open Steer which Reynolds co-authored: http://opensteer.sourceforge.net/
+This is such an amazing and inspiring piece of software.
+Running example OOOOk. So you&amp;rsquo;re back. Let me show me what I did.
+Open in new window     play       </description>
+    </item>
+    
+    <item>
+      <title>Pinball Simulation</title>
+      <link>/post/pinball-simulation/</link>
+      <pubDate>Sun, 01 May 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/post/pinball-simulation/</guid>
+      <description>Introduction  P2JS physics engine. Today I would use Box2D as it supports CCD which was a HUGE problem, there was a lot of tunneling on weak system. Created a custom state machine to manage the state of all entities Created a custom action system to trigger different predefined actions like light on, ball reset, start mission, trigger sound and so on. A zone system so that only 1&amp;frasl;4 of the involved table physics is active at one moment.</description>
+    </item>
+    
+    <item>
+      <title>A parallax world in PIXI</title>
+      <link>/post/parallax-world-pixi/</link>
+      <pubDate>Thu, 25 Feb 2016 00:00:00 +0100</pubDate>
+      
+      <guid>/post/parallax-world-pixi/</guid>
+      <description> Introduction This is a rocking solid parallax system, with clean z-based layers and a matrix based calculation system- which easily allows me to integrate a camera.
+That was fun and rewarding. I also did a client project based on this work after.
+Running example Open in new window      play     </description>
+    </item>
+    
+    <item>
+      <title>Pixicam</title>
+      <link>/post/pixicam/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/post/pixicam/</guid>
+      <description>Introduction Place all your objects in a world which is rendered based on 2d camera transformation. So you can zoom &amp;amp; translate your world with any size (think of platformer, tilemap).
+This world is a simple container so you can maintain other layers to render a HUD or menu on top of of your camera renderer world.
+Camera use cases  Zoom to a target Zoom to fit a view area Follow Target Constrained View Change Zoom Pivot  Running example  Use the minimap to pan the scene Use your mousewheel to zoom.</description>
+    </item>
+    
+    <item>
+      <title>A handcrafted WebGL demo.</title>
+      <link>/post/handcrafted-webgl/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/post/handcrafted-webgl/</guid>
+      <description> Introduction To be honest, yes, this looks like nothing. But little tree and his friend the cube learned me a lot about WebGL in its barest form. I read through the brilliant lessons of learningwebgl.com to do so.
+Running example Open in new window      play     </description>
+    </item>
+    
+  </channel>
+</rss>

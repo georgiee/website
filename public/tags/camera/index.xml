@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Camera on 2vc.org</title>
+    <link>/tags/camera/</link>
+    <description>Recent content in Camera on 2vc.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Dec 2015 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/camera/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pixicam</title>
+      <link>/post/pixicam/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/post/pixicam/</guid>
+      <description>Introduction Place all your objects in a world which is rendered based on 2d camera transformation. So you can zoom &amp;amp; translate your world with any size (think of platformer, tilemap).
+This world is a simple container so you can maintain other layers to render a HUD or menu on top of of your camera renderer world.
+Camera use cases  Zoom to a target Zoom to fit a view area Follow Target Constrained View Change Zoom Pivot  Running example  Use the minimap to pan the scene Use your mousewheel to zoom.</description>
+    </item>
+    
+  </channel>
+</rss>

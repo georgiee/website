@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Simulation on 2vc.org</title>
+    <link>/tags/simulation/</link>
+    <description>Recent content in Simulation on 2vc.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 May 2016 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/tags/simulation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pinball Simulation</title>
+      <link>/post/pinball-simulation/</link>
+      <pubDate>Sun, 01 May 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/post/pinball-simulation/</guid>
+      <description>Introduction  P2JS physics engine. Today I would use Box2D as it supports CCD which was a HUGE problem, there was a lot of tunneling on weak system. Created a custom state machine to manage the state of all entities Created a custom action system to trigger different predefined actions like light on, ball reset, start mission, trigger sound and so on. A zone system so that only 1&amp;frasl;4 of the involved table physics is active at one moment.</description>
+    </item>
+    
+  </channel>
+</rss>

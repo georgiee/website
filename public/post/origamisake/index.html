@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Origamizake 折り紙 &middot; Georgios Kaleadis</title>
+        <meta name="description" content="Origami runtime folded and rendered in JavaScript with threejs.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.25" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Origamizake 折り紙">
+<meta property="og:description" content="Origami runtime folded and rendered in JavaScript with threejs.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/post/origamisake/">
+        <link rel="stylesheet" href="/dist/application.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body class="page-holder">
+        
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-5010378-6', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="2vc.org" href="/">2vc.org</a>
+                            </h1>
+                        
+                        <a class="button-square" href="/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/deluxee">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/georgiee">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Contact" href="/page/contact/">Contact</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="About" href="/page/about/">About</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Lab" href="/post/">Lab</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+            <div class="page-holder__content">
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Origamizake 折り紙</h1>
+    
+        <p class="post-description" itemprop="description">Origami runtime folded and rendered in JavaScript with threejs.</p>
+    
+    <p class="post-date">
+        <span>Published <time datetime="2017-07-07" itemprop="datePublished">Fri, Jul 7, 2017</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="" itemprop="url" rel="author">Georgios Kaleadis</a>
+            </span>
+        </span>
+    </p>
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    
+
+<h2 id="introduction">Introduction</h2>
+
+<p>My current obsession is Origami and Origamizake is the digital product of it.
+It is all about folding Origami in 3D with the future goal of making it audio-reactive.</p>
+
+<p>Take a look here:<br>
+<a href="https://georgiee.github.io/origami/">https://georgiee.github.io/origami/</a></p>
+
+<p>Just fun for me. See my <a href="https://github.com/georgiee/origami/blob/master/LOG.md">LOG.MD</a> for my current mood 🎎</p>
+
+<hr />
+
+<h2 id="running-example">Running example</h2>
+
+<div class="example-actions">
+  <div class="example-actions__item">
+    <a target="_blank" href="https://georgiee.github.io/origami/editor/">Open in new window</a>
+  </div>
+
+
+  
+  <div class="example-actions__item">
+    <iframe src="https://ghbtns.com/github-btn.html?user=georgiee&repo=origami&type=star&size=large"
+  frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+  
+  </div>
+
+</div>
+
+<div class="example-view js-example-view" data-src='https://georgiee.github.io/origami/editor/'>
+
+  <div class='example-view__preview'>
+    <div class='example-view__preview-image' style='background-image:url(/images/preview-origami.png)'>
+    </div>
+    <button class='example-view__play-button js-play'>play</button>
+  </div>
+
+  <div class='example-view__iframe-holder'>
+    <iframe class='example-view__iframe js-iframe' width='100%' height='100%'></iframe>
+  </div>
+
+</div>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="/tags/lab/">lab</a>, 
+            
+                <a href="/tags/origami/">origami</a>, 
+            
+                <a href="/tags/threejs/">threejs</a>, 
+            
+                <a href="/tags/webgl/">webgl</a>, 
+            
+                <a href="/tags/polygons/">polygons</a>
+            
+        </p>
+    
+    </div>
+</footer>
+
+        
+    </article>
+</div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="2vc.org" href="/">2vc.org</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2017 / Georgios Kaleadis
+                </p>
+            </div>
+        </footer>
+
+        <script src="/js/jquery-1.11.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+        <script src="/js/jquery.fitvids.js"></script>
+        <script src="/js/scripts.js"></script>
+
+        <script src="/dist/application.js"></script>
+    </body>
+</html>
+

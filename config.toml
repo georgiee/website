@@ -1,0 +1,32 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "2vc.org"
+theme = "ghostwriter"
+
+[Params]
+  googleAnalytics = "UA-5010378-6"
+  intro = true
+  headline = "Georgios Kaleadis"
+  description = "experiments & more"
+  dateFormat = "Mon, Jan 2, 2006"
+  github = "https://github.com/georgiee"
+  twitter = "https://twitter.com/deluxee"
+  opengraph = true
+
+[Author]
+  name = "Georgios Kaleadis"
+
+[[menu.main]]
+  name = "Lab"
+  url = "/post/"
+  weight = 4
+
+[[menu.main]]
+  name = "Contact"
+  url = "/page/contact/"
+  weight = 3
+
+[[menu.main]]
+  name = "About"
+  url = "/page/about/"
+  weight = 4
